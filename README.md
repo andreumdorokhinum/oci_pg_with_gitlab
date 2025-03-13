@@ -4,7 +4,7 @@ This tutorial shows how to configure a standalone managed PostgreSQL
 database on OCI as the backend for a gitlab solution deployed on OCI Compute.
 
 ### First, create a managed PostgreSQL database
-    > OCI > Databases > PostgreSQL > DB Systems
+> OCI > Databases > PostgreSQL > DB Systems
 
 Pay attention and select appropriate PostgreSQL version according to your GitLab version:
 https://docs.gitlab.com/administration/package_information/postgresql_versions/
@@ -17,7 +17,7 @@ In PostgreSQL, create a gitlab user, database and assign permissions:
     GRANT ALL privileges ON DATABASE gitlabhq_production TO gitlab;
 
 ### Create an OCI Compute instance in the same private subnet where PostgreSQL was deployed and assign a public IP address to it:
-    > OCI > Compute > Instances > Create instance
+> OCI > Compute > Instances > Create instance
 
 SSH to the instance forwarding port 80:
 
